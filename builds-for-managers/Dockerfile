@@ -12,7 +12,7 @@ RUN   rpm --rebuilddb && \
       mkdir -p /opt/app-root/bin
 
 # Copy the runnable fat JAR to the container.
-ADD   app-src/target/builds-for-managers-swarm.jar /opt/app-root/bin/builds-for-managers.jar
+#ADD   app-src/target/builds-for-managers-swarm.jar /opt/app-root/bin/builds-for-managers.jar
 
 COPY  run-app.sh /opt/app-root/bin/
 
